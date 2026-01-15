@@ -1,0 +1,243 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    /* Professional Deep Navy Background */
+    background: linear-gradient(180deg, #0f172a 5%, #020617 100%);
+    color: #f1f5f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*Hero Section*/
+#hero {
+    color: #f1f5f9;
+    padding: 50px;
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero p {
+    color: #94a3b8; /* Slate gray for subtitles */
+}
+
+#callToActionBtn {
+    display: inline-block;
+    padding: 15px 30px;
+    margin-top: 20px;
+    /* Emerald Green Gradient */
+    background: linear-gradient(180deg, #10b981 6%, #059669 100%);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 4px 15px rgba(16, 185, 129, 0.2);
+}
+
+.loginBtn{
+    transition: 0.3s;
+}
+
+/*Services Section*/
+#services {
+    background-color: transparent;
+    padding: 50px;
+    border-radius: 10px;
+    min-height: 20vh;
+}
+
+#services h2 {
+    text-align: center;
+    color: #6366f1; /* Indigo Accent */
+}
+
+.services_card_holder {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 40px;
+    align-content: center;
+    justify-content: center;
+}
+
+.service_card {
+    border: 1px solid #1e293b;
+    border-radius: 10px;
+    padding: 25px;
+    background: linear-gradient(180deg, #1e293b 0%, #0f172a 100%);
+    color: #f1f5f9;
+    transition: .3s ease-out;
+}
+.service_card i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service_card h3 {
+    color: #6366f1;
+    margin-top: 10px;
+}
+
+.service_card p {
+    color: #94a3b8;
+}
+
+/*about-us section*/
+#aboutUs {
+    padding: 20px;
+    border-radius: 10px;
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(30, 41, 59, 0.5); /* Subtle Slate tint */
+}
+
+#aboutUs h2 {
+    color: #6366f1;
+    margin-bottom: 20px;
+}
+
+.aboutUs-text {
+    max-width: 800px;
+    font-size: larger;
+    color: #cbd5e1;
+    line-height: 1.6;
+}
+
+/*team section*/
+#team {
+    background-color: transparent;
+    padding: 50px;
+    border-radius: 10px;
+    min-height: 20vh;
+    text-align: center;
+}
+
+#team h2 {
+    color: #6366f1;
+}
+
+.team_card_holder {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 3%;
+    gap: 20px;
+}
+
+.team_card {
+    border: 1px solid #1e293b;
+    border-radius: 10px;
+    padding: 25px;
+    background: linear-gradient(180deg, #1e293b 0%, #0f172a 100%);
+    color: #f1f5f9;
+    transition: .3s ease-out;
+}
+.team_card h3 {
+    color: #f1f5f9;
+}
+
+/*Contact & Login forms*/
+#contact, #login-section {
+    padding: 50px;
+    border-radius: 10px;
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#login-section form{
+    padding: 30px !important;
+    min-height: 10vh !important;
+    min-width: 20vw !important;
+}
+.login-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.login-notice{
+    color: #94a3b8;
+    margin-top: 15px;
+    font-size: 14px;
+    text-wrap: wrap;
+    width: 100%;
+    text-align: left;
+}
+
+#contact h2, #login-section h2 {
+    color: #6366f1;
+    margin-bottom: 20px;
+}
+
+#contact form, #login-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    background-color: #1e293b;
+    width: 60%;
+    border-radius: 10px;
+    padding: 60px;
+    border: 1px solid #334155;
+    box-shadow: 0 10px 25px rgba(107, 107, 107, 0.3);
+}
+
+
+#contact form input, #contact form textarea,
+#login-section form input, #login-section form textarea {
+    width: 80%;
+    padding: 12px;
+    border: 1px solid #334155;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #020617;
+    color: #ffffff;
+}
+
+#contact form label, #login-section form label {
+    color: #cbd5e1;
+    width: 80%;
+    text-align: left;
+}
+
+#contact button, #login-section button {
+    padding: 15px 40px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(180deg, #6366f1 0%, #4338ca 100%);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#backToTop {
+    display: none;
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99; 
+    border: none;
+    /* Matching Emerald Accent */
+    background-color: #10b981; 
+    color: white;
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 10%; 
+    font-size: 18px;
+    transition: 0.3s;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
