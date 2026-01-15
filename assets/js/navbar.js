@@ -1,12 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
     const navToggle = document.getElementById('nav-toggle');
     const navMenu = document.querySelector('.nav-menu');
+    const logInButton = document.querySelector('.nav-slogan')
     const hamburgerIcon = navToggle ? navToggle.querySelector('i') : null;
 
     if (navToggle && navMenu) {
         navToggle.addEventListener('click', () => {
             
             navMenu.classList.toggle('active');
+            logInButton.classList.toggle('active');
 
             if (navMenu.classList.contains('active')) {
                 hamburgerIcon.classList.replace('fa-bars', 'fa-xmark');
@@ -20,6 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
     links.forEach(link => {
         link.addEventListener('click', () => {
             navMenu.classList.remove('active');
+            logInButton.classList.remove('active');
             if(hamburgerIcon) hamburgerIcon.classList.replace('fa-xmark', 'fa-bars');
         });
     });

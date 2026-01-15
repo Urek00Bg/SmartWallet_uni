@@ -25,14 +25,13 @@
 /* fade_down animation */
 .fade-down {
     opacity: 0;
-    transform: translateY(-30px); /* Изместване нагоре */
+    transform: translateY(-30px); 
     transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
-/* Състояние, когато JS добави класа */
 .fade-down.visible {
     opacity: 1;
-    transform: translateY(0); /* Връщане на място */
+    transform: translateY(0); 
 }
 #callToActionBtn:hover {
     opacity: 0.9;
